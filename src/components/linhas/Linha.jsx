@@ -1,8 +1,7 @@
 import React from 'react';
-import '../App.css';
 
 
-class Post extends React.Component{
+class Linha extends React.Component{
   render(){
     return(
       <tr>
@@ -15,4 +14,4 @@ class Post extends React.Component{
   }
 }
 
-export default Post;
+export default Linha;

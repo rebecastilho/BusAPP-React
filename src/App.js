@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Linhas from './components/linhas/Linhas';
+import Usuarios from './components/usuarios/Index.jsx';
+import Linhas from './components/linhas/Linhas.jsx';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 
@@ -10,6 +11,7 @@ class App extends React.Component{
     return (
       <Router>
           <Route exact path="/linhas" component={Linhas} />
+          <Route exact path="/usuarios" component={Usuarios} />
       </Router>
       )
   }

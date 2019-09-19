@@ -1,20 +1,4 @@
 import React, { Component } from 'react';
-import Usuario from './Usuario';
-import objeto from './usuarios.json';
-
-class UsuariosForm extends React.Component {
-    render(){
-        return(
-            <div>
-            <Navbar/>
-            <Conteudo/>
-            </div>
-        )
-    }
-  }
-
-
-
 
 class Navbar extends React.Component {
 render() {
@@ -38,18 +22,4 @@ render() {
 
 }
 
-class Conteudo extends React.Component {
-render(){
-    return(
-
-        <div className="container">
-            
-            
-        </div>
-    )
-}
-}
-
-
-
-export default UsuariosForm;
+export default Navbar;

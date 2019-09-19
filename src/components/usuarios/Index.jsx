@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from '../layout/Navbar';
 import Usuario from './Usuario';
 import objeto from './usuarios.json';
 
@@ -24,7 +25,7 @@ class Conteudo extends React.Component {
                     <h2>Lista de Clientes</h2>
                 </div>
                 <div className="col col-md-2 offset-md-4">
-                    <a href="usuarios/novo" className="btn btn-success">Novo Usuário</a>
+                    <a href="usuarios/form" className="btn btn-success">Novo Usuário</a>
                 </div>
             </div>
             <div className="row">
@@ -63,27 +64,6 @@ class TabelaCabecalho extends React.Component {
 
 }
 
-class Navbar extends React.Component {
-    render() {
-        return (
-            <nav className="navbar  navbar-expand-lg navbar-dark bg-dark mb-3">
-            <a className="navbar-brand" href="#">BusApp</a>
-
-            <div className="collapse navbar-collapse">
-                <ul className="navbar-nav mr-auto  ">
-                    <li className="nav-item">
-                        <a className="nav-link" href="/linhas">Linhas</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="/usuarios">Clientes</a>
-                    </li>
-                </ul>
-            </div>
-            </nav>
-        )
-    };
-  
-  }
 
 class ListaUsuarios extends React.Component {
   constructor(props) {

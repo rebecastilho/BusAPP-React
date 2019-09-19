@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Usuarios from './components/usuarios/Index.jsx';
-import Linhas from './components/linhas/Linhas.jsx';
+import Linhas from './components/linhas/Index.jsx';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 

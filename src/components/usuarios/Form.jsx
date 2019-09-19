@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Usuario from './Usuario';
 import objeto from './usuarios.json';
 
-class UsuariosForm extends React.Component {
+class FormUsuario extends React.Component {
     render(){
         return(
             <div>
@@ -43,7 +43,7 @@ render(){
     return(
 
         <div className="container">
-            
+            <div>Ola</div>
             
         </div>
     )
@@ -52,4 +52,4 @@ render(){
 
 
 
-export default UsuariosForm;
+export default FormUsuario;

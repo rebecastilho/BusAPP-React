@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Usuario from './Usuario';
-import objeto from './usuarios.json';
+import Navbar from '../layout/Navbar';
+
+
+
 
 class FormUsuario extends React.Component {
     render(){
@@ -14,29 +16,6 @@ class FormUsuario extends React.Component {
   }
 
 
-
-
-class Navbar extends React.Component {
-render() {
-    return (
-        <nav className="navbar  navbar-expand-lg navbar-dark bg-dark mb-3">
-        <a className="navbar-brand" href="#">BusApp</a>
-
-        <div className="collapse navbar-collapse">
-            <ul className="navbar-nav mr-auto  ">
-                <li className="nav-item">
-                    <a className="nav-link" href="/linhas">Linhas</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="/usuarios">Clientes</a>
-                </li>
-            </ul>
-        </div>
-        </nav>
-    )
-};
-
-}
 
 class Conteudo extends React.Component {
 render(){
@@ -76,9 +55,9 @@ render(){
                         </div>
                         
                     </div>
-
-                    <div className="row form-group">
-                        <div className="col col-sm-3 offset-sm-9">
+                    <input type="hidden" value="Administrador" name="tipo"/>
+                    <div className="row">
+                        <div className="col col-sm-2 offset-sm-10">
                             <button className="btn btn-success" type="submit">Enviar</button>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import objeto from './linhas.json';
 import Linha from './Linha';
 

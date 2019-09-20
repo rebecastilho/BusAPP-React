@@ -2,18 +2,24 @@
     "usuarios" :[
         {
             "id"  : "1",
-            "nome" : "teste1",
-            "email" :"teste1@teste.com"
+            "nome" : "Pedro",
+            "email" :"pedro@admin.com",
+            "senha" :"123",
+            "tipo" : "Administrador"
         },
         {
             "id"  : "2",
-            "nome" : "teste2",
-            "email" :"teste2@teste.com"
+            "nome" : "Rebeca",
+            "email" :"rebeca@admin.com",
+            "senha" :"123",
+            "tipo" : "Administrador"
         },
         {
             "id"  : "3",
-            "nome" : "teste3",
-            "email" :"teste3@teste.com"
+            "nome" : "João",
+            "email" :"joao@gmail.com",
+            "senha" :"000111",
+            "tipo" : "Normal"
         }
  
     ]

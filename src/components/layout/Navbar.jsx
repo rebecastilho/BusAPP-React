@@ -12,7 +12,7 @@ render() {
                     <a className="nav-link" href="/linhas">Linhas</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/usuarios">Clientes</a>
+                    <a className="nav-link" href="/usuarios">Usuários</a>
                 </li>
             </ul>
         </div>

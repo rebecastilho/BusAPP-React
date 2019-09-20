@@ -7,6 +7,7 @@ class Usuario extends React.Component{
       <tr>
           <td>{ this.props.nome }</td>
           <td>{ this.props.email }</td>
+          <td>{ this.props.tipo }</td>
           <td>
             <a href={"usuarios/form/"+this.props.id} class="btn btn-primary btn-sm mr-3">Editar</a>
             <a href={"usuarios/deletar/"+this.props.id} class="btn btn-danger btn-sm">Deletar</a>

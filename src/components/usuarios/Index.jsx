@@ -22,7 +22,7 @@ class Conteudo extends React.Component {
         <div className="container">
             <div className="row">
                 <div className="col col-md-6">
-                    <h2>Lista de Clientes</h2>
+                    <h2>Lista de Usuários</h2>
                 </div>
                 <div className="col col-md-2 offset-md-4">
                     <a href="usuarios/form" className="btn btn-success">Novo Usuário</a>
@@ -57,6 +57,7 @@ class TabelaCabecalho extends React.Component {
                   <th  scope='col'>Nome</th>
                   <th scope='col'>Email</th>
                   <th scope='col'>Ações</th>
+                  <th scope='col'>Permissão</th>
               </tr>
           </thead>
       )
@@ -73,7 +74,7 @@ class ListaUsuarios extends React.Component {
           id:"",
           nome: "",
           email: "",
-         
+          tipo: "",
       }
   }
   render() {
@@ -85,6 +86,7 @@ class ListaUsuarios extends React.Component {
                           id={usuario.id}
                           nome={usuario.nome}
                           email={usuario.email}
+                          tipo={usuario.tipo}
                       />
                   )
               }

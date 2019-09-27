@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../layout/Navbar';
+import Footer from '../layout/Footer';
 
 
 
@@ -10,6 +11,7 @@ class FormUsuario extends React.Component {
             <div>
             <Navbar/>
             <Conteudo/>
+            <Footer/>
             </div>
         )
     }
@@ -57,8 +59,8 @@ render(){
                     </div>
                     <input type="hidden" value="Administrador" name="tipo"/>
                     <div className="row">
-                        <div className="col col-sm-2 offset-sm-10">
-                            <button className="btn btn-success" type="submit">Enviar</button>
+                        <div className="col col-sm-2 offset-sm-9">
+                            <button className="btn btn-success btn-sm" type="submit">Enviar</button>
                         </div>
                     </div>
                 

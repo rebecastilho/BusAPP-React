@@ -25,7 +25,7 @@ class Conteudo extends React.Component {
                     <h2>Lista de Usuários</h2>
                 </div>
                 <div className="col col-md-2 offset-md-4">
-                    <a href="usuarios/form" className="btn btn-success">Novo Usuário</a>
+                    <a href="usuarios/form" className="btn btn-success btn-sm">Novo</a>
                 </div>
             </div>
             <div className="row">
@@ -54,10 +54,10 @@ class TabelaCabecalho extends React.Component {
       return (
           <thead className="thead-dark">
               <tr>
-                  <th  scope='col'>Nome</th>
+                  <th scope='col'>Nome</th>
                   <th scope='col'>Email</th>
-                  <th scope='col'>Ações</th>
                   <th scope='col'>Permissão</th>
+                  <th scope='col'>Ações</th>
               </tr>
           </thead>
       )

@@ -1,6 +1,9 @@
 import React from 'react';
 import objeto from './linhas.json';
 import Linha from './Linha';
+import Navbar from '../layout/Navbar';
+import Footer from '../layout/Footer';
+
 
 
 class CorpoPagina extends React.Component {
@@ -14,7 +17,7 @@ class CorpoPagina extends React.Component {
                             <h2>Lista de Linhas</h2>
                         </div>
                         <div className="col col-md-2 offset-md-4">
-                            <a href="linhas/novo" className="btn btn-success">Nova Linha</a>
+                            <a href="linhas/form" className="btn btn-sm btn-success">Novo</a>
                         </div>
                     </div>
                     <div className="row">
@@ -23,31 +26,10 @@ class CorpoPagina extends React.Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }
-}
-
-class Navbar extends React.Component {
-    render() {
-        return (
-            <nav className="navbar  navbar-expand-lg navbar-dark bg-dark mb-3">
-                <a className="navbar-brand" href="#">BusApp</a>
-
-                <div className="collapse navbar-collapse">
-                    <ul className="navbar-nav mr-auto  ">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/linhas">Linhas</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/usuarios">Clientes</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        )
-    };
-
 }
 
 class Tabela extends React.Component {

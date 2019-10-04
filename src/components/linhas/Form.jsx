@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../layout/Navbar';
+import Footer from '../layout/Footer';
 import Linha from './Linha';
 import objeto from './linhas.json';
 
@@ -9,6 +10,7 @@ class FormLinha extends React.Component {
             <div>
                 <Navbar />
                 <Conteudo />
+                <Footer />
             </div>
         )
     }

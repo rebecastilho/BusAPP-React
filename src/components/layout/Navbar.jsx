@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class Navbar extends React.Component {
 render() {
@@ -13,6 +13,10 @@ render() {
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="/usuarios">Usuários</a>
+                </li>
+                
+                <li className="nav-item">
+                    <a className="nav-link" href="/sac">SAC</a>
                 </li>
             </ul>
         </div>

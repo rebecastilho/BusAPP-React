@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../layout/Navbar';
+import Footer from '../layout/Footer';
 import Usuario from './Usuario';
 import objeto from './usuarios.json';
 
@@ -9,6 +10,7 @@ class IndexUsuario extends React.Component {
             <div>
             <Navbar/>
             <Conteudo/>
+            <Footer/>
             </div>
         )
     }

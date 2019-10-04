@@ -1,4 +1,36 @@
-body{
-    background-image: url('../images/home.jpg');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    margin: 0;
+    width: 100vw;
+    height: 40vh;
+    background-image: url('../images/home2.jpg');
+}
+#main{
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+}
+.text-row-1{
+    margin-top: 20% !important;
+}
+.page{
+    width: 100vh;
+}
 
+.comoFunciona{
+    margin: 0;
+    width: 100vw;
+    height: 50vh;
+    background-color: #CCCCCC;
+    color: #805959;
+}
+
+.font-evident{
+    font-weight: 900;
+    font-size: 3.0rem;
+    margin-top: 40px;
 }

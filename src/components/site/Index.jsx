@@ -11,6 +11,7 @@ class IndexSite extends React.Component {
             <div id="main">
                 <Navbar/>
                 <Main/>
+                <Modal/>
                 <Footer/>
             </div>
         )
@@ -28,7 +29,7 @@ class Navbar extends React.Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent-4">
                     <div className="navbar-nav ml-auto nav-flex-icons">
                     
-                        <a className="nav-link" href="#"><i className="fas fa-user"></i> Login/Register</a>
+                        <a className="nav-link" href="#" data-toggle="modal" data-target="#modalExemplo"><i className="fas fa-user"></i> Acesso</a>
                         
                     </div>
                 </div>
@@ -38,9 +39,75 @@ class Navbar extends React.Component {
              
 }  
 
+class Modal extends React.Component {
+    render() {
+        return (
+            // <!-- Modal -->
+            <div className="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal-dialog" role="document">
+                <div className="modal-content">
+                <div className="modal-header">
+                    <h5  id="exampleModalLabel">Acesso</h5>
+                    <button type="button" className="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div className="modal-body">
+                    <div className="row d-flex justify-content-center">
+                        <ul className="nav nav-tabs" id="myTab" role="tablist">
+                            <li className="nav-item">
+                                <a className="nav-link login" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Logar</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" id="profile-tab" data-toggle="tab" href="#register" role="tab" aria-controls="profile" aria-selected="false">Cadastrar</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div className="tab-content" id="myTabContent">
+                        <div className="tab-pane fade show login" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form action="" method="post">
+                                <label htmlFor="email" className="mt-4">Email</label>
+                                <input type="email" name="email" id="email" class="form-control"/>
+
+                                <label htmlFor="senha" className="mt-4">Senha</label>
+                                <input type="password" name="senha" id="senha" class="form-control"/>
+                                <button type="button" className="btn btn-sm btn-primary float-right mt-4"><i class="fas fa-sign-in-alt"> Logar</i></button>
+                            </form>
+                        </div>
+
+                        <div className="tab-pane fade" id="register" role="tabpanel" aria-labelledby="profile-tab">
+                            <form action="" method="post">
+                                <label htmlFor="email" className="mt-4">Email</label>
+                                <input type="email" name="email" id="email" class="form-control"/>
+
+                                <label htmlFor="nome" className="mt-4">Nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control"/>
+
+                                <label htmlFor="senha" className="mt-4">Senha</label>
+                                <input type="password" name="senha" id="senha" class="form-control"/>
+                                <button type="button" className="btn btn-sm btn-primary float-right mt-4"><i class="far fa-plus-square"></i> Cadastrar</button>
+                            </form>
+                        </div>
+                
+                    </div>
+                </div>
+                <div>
+                    <button type="button" className="btn btn-sm grey float-left" data-dismiss="modal">Fechar</button>
+               </div>
+                </div>
+            </div>
+            </div>
+            
+        )
+    };
+             
+}  
+
 class Footer extends React.Component {
     render() {
         return (
+            
             <footer className="page-footer font-small bg-dark fixed-bottom">
 
             <div className="footer-copyright text-center py-3">© 2019 Copyright: BusApp

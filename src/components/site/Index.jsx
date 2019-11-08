@@ -77,7 +77,7 @@ class Modal extends React.Component {
                         </div>
 
                         <div className="tab-pane fade" id="register" role="tabpanel" aria-labelledby="profile-tab">
-                            <form action="" method="post">
+                            <form action="http://localhost:3001/usuarios/novo" method="post">
                                 <label htmlFor="email" className="mt-4">Email</label>
                                 <input type="email" name="email" id="email" class="form-control"/>
 
@@ -86,7 +86,7 @@ class Modal extends React.Component {
 
                                 <label htmlFor="senha" className="mt-4">Senha</label>
                                 <input type="password" name="senha" id="senha" class="form-control"/>
-                                <button type="button" className="btn btn-sm btn-primary float-right mt-4"><i class="far fa-plus-square"></i> Cadastrar</button>
+                                <button type="submit" className="btn btn-sm btn-primary float-right mt-4"><i class="far fa-plus-square"></i> Cadastrar</button>
                             </form>
                         </div>
                 

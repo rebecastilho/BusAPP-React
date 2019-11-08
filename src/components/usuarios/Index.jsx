@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import Navbar from '../layout/Navbar';
 import Footer from '../layout/Footer';
 import Usuario from './Usuario';
-import objeto from './usuarios.json';
+import axios from 'axios';
+
+
+
+   
+  
+
 
 class IndexUsuario extends React.Component {
     render(){
@@ -72,19 +78,31 @@ class ListaUsuarios extends React.Component {
   constructor(props) {
       super(props)
       this.state = {
-          usuarios: objeto.usuarios,
+          usuarios:[],
           id:"",
           nome: "",
           email: "",
           tipo: "",
       }
+      axios.get('http://localhost:3001/usuarios')
+      .then(res => {
+          console.log(res.data.usuarios);
+          this.setState({
+            usuarios : res.data.usuarios,
+          })
+          console.log(this.state);
+      }).catch((e)=>{
+          console.log(e);
+      })
   }
   render() {
       return (
           <tbody>
               {
+
                   this.state.usuarios.map((usuario, i) =>
                       <Usuario
+                          key={i}
                           id={usuario.id}
                           nome={usuario.nome}
                           email={usuario.email}

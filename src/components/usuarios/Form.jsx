@@ -1,11 +1,35 @@
 import React, { Component } from 'react';
 import Navbar from '../layout/Navbar';
 import Footer from '../layout/Footer';
-
-
+import axios from 'axios';
 
 
 class FormUsuario extends React.Component {
+    
+    constructor(props) {
+        super(props)
+        this.state = {
+            usuario:[],
+            id:"",
+            nome: "",
+            email: "",
+        }
+
+        axios.get('http://localhost:3001/usuarios/editar/'+this.props.match.params.id)
+        .then(res => {
+            console.log(res.data.usuario);
+            this.setState({
+            usuario : res.data.usuario,
+            nome : res.data.usuario.nome,
+            email : res.data.usuario.email,
+            })
+        }).catch((e)=>{
+            console.log(e);
+        })
+}
+
+
+
     render(){
         return(
             <div>
@@ -20,6 +44,9 @@ class FormUsuario extends React.Component {
 
 
 class Conteudo extends React.Component {
+
+    
+
 render(){
     return(
 
@@ -39,7 +66,7 @@ render(){
                     <div className="row form-group">
                         <div className="col col-md-12">
                             <label htmlFor="nome">Nome:</label>
-                            <input class="form-control" type="text" name="nome" id="nome"/>
+                            <input class="form-control" type="text" value={FormUsuario.state} name="nome" id="nome"/>
                         </div>
                     </div>
 

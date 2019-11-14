@@ -79,7 +79,6 @@ class Conteudo extends React.Component {
                                 </div>
 
                             </div>
-                            <input type="hidden" value="Administrador" name="tipo" />
                             <div className="row">
                                 <div className="col col-sm-2 offset-sm-9">
                                     <button className="btn btn-success btn-sm" type="submit">Enviar</button>

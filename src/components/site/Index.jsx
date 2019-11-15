@@ -66,13 +66,13 @@ class Modal extends React.Component {
                     </div>
                     <div className="tab-content" id="myTabContent">
                         <div className="tab-pane fade show login" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <form action="" method="post">
+                            <form action="http://localhost:3001/autenticacao/login/" method="post">
                                 <label htmlFor="email" className="mt-4">Email</label>
                                 <input type="email" name="email" id="email" class="form-control"/>
 
                                 <label htmlFor="senha" className="mt-4">Senha</label>
                                 <input type="password" name="senha" id="senha" class="form-control"/>
-                                <button type="button" className="btn btn-sm btn-primary float-right mt-4"><i class="fas fa-sign-in-alt"> Logar</i></button>
+                                <button type="submit" className="btn btn-sm btn-primary float-right mt-4"><i class="fas fa-sign-in-alt"> Logar</i></button>
                             </form>
                         </div>
 

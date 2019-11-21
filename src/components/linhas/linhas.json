@@ -1,18 +1,21 @@
 {
     "linhas" : [
         {
+            "id" : 1,
             "origem" : "Caraguatatuba",
             "destino" : "São Sebastião",
             "tarifa" : 5.50,
             "horario_saida" : "19:00"
         },
         {
+            "id" : 2,
             "origem" : "Ubatuba",
             "destino" : "Caraguatatuba",
             "tarifa" : 5.50,
             "horario_saida" : "20:00"
         },
         {
+            "id" : 3,
             "origem" : "São Sebastião",
             "destino" : "Caraguatatuba",
             "tarifa" : 5.50,

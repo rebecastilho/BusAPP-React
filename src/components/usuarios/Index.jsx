@@ -4,12 +4,6 @@ import Footer from '../layout/Footer';
 import Usuario from './Usuario';
 import axios from 'axios';
 
-
-
-   
-  
-
-
 class IndexUsuario extends React.Component {
     render(){
         return(
@@ -31,9 +25,6 @@ class Conteudo extends React.Component {
             <div className="row">
                 <div className="col col-md-6">
                     <h2>Lista de Usuários</h2>
-                </div>
-                <div className="col col-md-2 offset-md-4">
-                    <a href="/usuarios/form" className="btn btn-success btn-sm">Novo</a>
                 </div>
             </div>
             <div className="row">

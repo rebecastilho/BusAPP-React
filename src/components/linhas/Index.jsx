@@ -3,8 +3,7 @@ import objeto from './linhas.json';
 import Linha from './Linha';
 import Navbar from '../layout/Navbar';
 import Footer from '../layout/Footer';
-
-
+import axios from 'axios';
 
 class CorpoPagina extends React.Component {
     render() {
@@ -17,7 +16,7 @@ class CorpoPagina extends React.Component {
                             <h2>Lista de Linhas</h2>
                         </div>
                         <div className="col col-md-2 offset-md-4">
-                            <a href="linhas/form" className="btn btn-sm btn-success">Novo</a>
+                            <a href="/linhas/form" className="btn btn-sm btn-success">Novo</a>
                         </div>
                     </div>
                     <div className="row">
@@ -65,22 +64,33 @@ class ListaLinhas extends React.Component {
         super(props)
         this.state = {
             linhas: objeto.linhas,
+            id:"",
             origem: "",
             destino: "",
             tarifa: "",
             horario_saida: ""
         }
-    }
+    axios.get('http://localhost:3001/linhas')
+    .then(res => {
+        this.setState({
+          linhas : res.data.linhas,
+        })
+        console.log(this.state);
+    }).catch((e)=>{
+        console.log(e);
+    })
+}
     render() {
         return (
             <tbody>
                 {
                     this.state.linhas.map((linha, i) =>
                         <Linha
+                            id = {linha.id}
                             origem={linha.origem}
                             destino={linha.destino}
                             tarifa={linha.tarifa}
-                            horario_saida={linha.horario_saida}
+                            horario_saida={linha.horarioSaida}
                         />
                     )
                 }

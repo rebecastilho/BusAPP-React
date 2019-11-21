@@ -16,6 +16,7 @@ class App extends React.Component {
       <Router>
           <Route exact path="/linhas" component={IndexLinha} />
           <Route exact path="/linhas/form" component={FormLinha} />
+          <Route exact path="/linhas/form/:id" component={FormLinha} />
           <Route exact path="/usuarios" component={IndexUsuario} />
           <Route exact path="/usuarios/form" component={FormUsuario} />
           <Route exact path="/usuarios/form/:id" component={FormUsuario} />
